@@ -13,7 +13,7 @@ const AddTask = () =>{
 
         
 
-       const response = await fetch('http://127.0.0.1:8000/tasks/',{
+       const response = await fetch('https://task-manager-4-c00l.onrender.com/tasks/',{
 
             method:'POST',
 

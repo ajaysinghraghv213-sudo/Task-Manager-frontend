@@ -2,7 +2,7 @@
 export const fetchRefreshToken = async()=>{
     const refresh = localStorage.getItem("refresh")
 
-     const response = await fetch('http://127.0.0.1:8000/refresh/token/',{
+     const response = await fetch('https://task-manager-4-c00l.onrender.com/refresh/token/',{
 
         method : "POST",
         headers : {

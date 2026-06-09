@@ -10,14 +10,14 @@ const Tasks = () =>{
     useEffect(() =>{const fetchTasks = async() =>{
            let access = localStorage.getItem("access");
 
-       let response = await fetch('http://127.0.0.1:8000/tasks/',{
+       let response = await fetch('https://task-manager-4-c00l.onrender.com/tasks/',{
             headers:   {"Authorization": `Bearer ${access}`
         }})
         if (response.status===401){
 
             access = await fetchRefreshToken()
 
-            response = await fetch('http://127.0.0.1:8000/tasks/',{
+            response = await fetch('https://task-manager-4-c00l.onrender.com/tasks/',{
 
                 headers: {"Authorization": `Bearer ${access}`
 
@@ -41,7 +41,7 @@ fetchTasks()
 const deleteTask = async (id) => {
 
     const response = await fetch(
-        `http://127.0.0.1:8000/taskDetail/${id}/`,
+        `https://task-manager-4-c00l.onrender.com/taskDetail/${id}/`,
         {
 
             method: "DELETE",

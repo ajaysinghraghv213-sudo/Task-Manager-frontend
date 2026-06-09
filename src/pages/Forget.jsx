@@ -7,7 +7,7 @@ const Forget = () =>{
 
     const sendRestLink = async() =>{
 
-        const response = await fetch('http://127.0.0.1:8000/forget/',{
+        const response = await fetch('https://task-manager-4-c00l.onrender.com/forget/',{
 
             method:"POST",
             headers:{

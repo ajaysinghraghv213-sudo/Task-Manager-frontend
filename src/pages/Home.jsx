@@ -27,7 +27,7 @@ const Home = () =>{
         try {
 
             const response = await fetch(
-                'http://127.0.0.1:8000/tasks/',
+                'https://task-manager-4-c00l.onrender.com/tasks/',
                 {
                     headers: {
                         "Authorization":

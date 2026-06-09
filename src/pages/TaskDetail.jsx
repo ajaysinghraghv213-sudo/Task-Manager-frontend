@@ -10,7 +10,7 @@ const TaskDetail = () =>{
 
     // fetching tasketails
     useEffect(() =>{
-        fetch(`http://127.0.0.1:8000/taskDetail/${id}/`,{
+        fetch(`https://task-manager-4-c00l.onrender.com/taskDetail/${id}/`,{
             headers:{Authorization: `Bearer ${localStorage.getItem("access")}`
         }}
         )
@@ -21,7 +21,7 @@ const TaskDetail = () =>{
 
     const markCompleted = async() =>{
 
-        const response = await fetch(`http://127.0.0.1:8000/taskDetail/${id}/`,{
+        const response = await fetch(`https://task-manager-4-c00l.onrender.com/taskDetail/${id}/`,{
 
             method : "PUT",
             headers : {Authorization: `Bearer ${localStorage.getItem("access")}`,

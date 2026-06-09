@@ -8,7 +8,7 @@ const Settings = () =>{
     const handleLogout = async() =>{
         const refresh = localStorage.getItem('refresh')
 
-         const response = await fetch('http://127.0.0.1:8000/logout/',{
+         const response = await fetch('https://task-manager-4-c00l.onrender.com/logout/',{
 
             method : "POST",
             headers : {
